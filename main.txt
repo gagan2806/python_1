@@ -1,0 +1,12 @@
+x=int(input("enter the fist operand"))
+y=int(input("enter the second operand"))
+operand=input("enter the operator")
+if operand == "+":
+ op=x+y
+elif operand == '-':
+ op=x-y
+elif operand == '*':
+ op=x*y
+elif operand == '/':
+ op=x/y
+print("answer is",op)
