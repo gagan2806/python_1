@@ -78,7 +78,7 @@ x4=dic1.items() | dic2.items()
 print(x4)
 print(set(dic1)>=set(dic2))
 print(set(dic2)>=set(dic1))
-                                                  -- assignment 
+                                                  -- assignment 3
                                   """r+ helps to read a file and then write """
 f=open("print.txt","r+")
 data=f.read()
