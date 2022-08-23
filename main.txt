@@ -1,4 +1,4 @@
-                                        -- assignment2
+                                        #  assignment2
 x=int(input("enter the fist operand"))
 y=int(input("enter the second operand"))
 operand=input("enter the operator")
@@ -11,8 +11,8 @@ elif operand == '*':
 elif operand == '/':
  op=x/y
 print("answer is",op)
-                                              -- assignment 1
-                                       -- comparison of lists 
+                                              # assignment 1
+                                       # comparison of lists 
 list1=[1,2,3,4,5]
 list2=[1,2,3]
 list3=list1<list2
@@ -29,7 +29,7 @@ list8=list1 is not list2
 print(list8)
 list9=list1+list2
 print(list9)
-                                        -- comparison of tuples
+                                        # comparison of tuples
 tuple1=(10,20,30,40,50)
 tuple2=(10,20,30,40,50)
 tuple3=tuple1<tuple2
@@ -44,7 +44,7 @@ tuple7=tuple1==tuple2
 print(tuple7)
 tuple8=tuple1 is not tuple2
 print(tuple8)
-                                        -- comparison of sets
+                                        # comparison of sets
 set1={'hello','this','is'}
 set2={'an','assignment','is'}
 set3=set1|set2
@@ -57,7 +57,7 @@ set6=set1<set2
 print(set6)
 set7=set1<=set2
 print(set7)
-                                       -- comparison of dictionary
+                                        # comparison of dictionary
 dic1={"key1":"100","key2":"200","key3":"300"}
 dic2={"key1":"100","key2":"200","key3":"300","key4":"400"}
 x1=dic1.keys() & dic2.keys()
@@ -78,5 +78,27 @@ x4=dic1.items() | dic2.items()
 print(x4)
 print(set(dic1)>=set(dic2))
 print(set(dic2)>=set(dic1))
-                                                  -- assignment 2
+                                                  -- assignment 
+                                  """r+ helps to read a file and then write """
+f=open("print.txt","r+")
+data=f.read()
+f.write("written by me")
+print(data)
+
+                                 """a+ helps to write some text and then read a file 
+                          by overwriting that file"""
+f=open("print.txt","w+")
+print(f.tell())
+f.write("hello")
+print(f.tell())
+f.seek(0)
+data=f.read()
+print(f.tell())
+print(data)
+                          """a+ helps to append some text and then read a file 
+                          without overwriting that file"""
+f=open("file.txt","a+")
+f.write("\n great")
+data=f.read()
+print(data)
                                                   
